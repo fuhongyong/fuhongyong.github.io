@@ -1,0 +1,78 @@
+a, address, b, big, blockquote, body, center, cite, code, dd, del, div, dl, dt, em, fieldset, font, form, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, label, legend, li, ol, p, pre, small, span, strong, u, ul, var
+{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    margin: 50px;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/*头部*/
+#tab{
+    width: 498px;
+    height: 130px;
+    border: 1px solid #ddd;
+    overflow: hidden;
+}
+
+#tab-header{
+    height: 33px;
+    position: relative;
+}
+
+#tab-header ul{
+    text-align: center;
+    width: 501px;
+    position: absolute;
+    left: -1px;
+
+}
+
+#tab-header ul li{
+    float: left;
+    width: 98px;
+    height: 33px;
+    background-color: #F7F7F7;
+    line-height: 33px;
+    padding: 0 1px;
+    border-bottom: 1px solid #ddd;
+}
+
+#tab-header ul li.selected{
+    background-color: white;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 0;
+    padding: 0;
+}
+
+#tab-header ul li:hover{
+    color: orangered;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+/*主要内容*/
+#tab-body .dom{
+    display: none;
+}
+
+#tab-body .dom ul li{
+    float: left;
+    width: 220px;
+    margin: 15px 0 0 10px;
+}
+
+#tab-body .dom ul li a:hover{
+    color: orange;
+}
